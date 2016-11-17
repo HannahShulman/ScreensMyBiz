@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+
+    android:layout_height="76dp"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:layout_marginRight="12.75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/profile"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="13.75dp"
+        android:layout_width="0dp"
+        android:layout_weight="9"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+
+            android:textSize="8.5pt"
+
+            android:text="רשק"
+            android:layout_toRightOf="@+id/profile"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:maxLines="1"
+            android:id="@+id/contact_name"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/seen_icon"
+                android:src="@drawable/done_all"
+                android:alpha=".54"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="-6dp"
+                android:paddingLeft="-6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:alpha=".54"
+            android:textSize="8.2pt"
+            android:layout_toRightOf="@+id/profile"
+            android:layout_below="@+id/contact_name"
+            android:layout_marginLeft="10dp"
+            android:text="דגכעיח עוענ כאכאט ועו "
+            android:id="@+id/txt_msg"
+            android:maxWidth="270dp"
+            android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:alpha=".54"
+            android:text="12:12"
+            android:textSize="6.4pt"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="17.7dp"
+            android:id="@+id/msg_sent"
+            />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_create_account"
+            android:text="קטגוריה"
+            android:alpha="87"
+            android:textSize="6.5pt"
+            android:textStyle="bold"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/msg_sent"
+            android:id="@+id/category"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

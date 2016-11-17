@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolBar"
+        android:elevation="4dp"
+        android:background="@color/main_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/add_image"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="20dp"/>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/skip"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:maxWidth="190dp"
+            android:maxLines="2"
+            android:minLines="2"
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/text"
+            android:text="@string/add_image_for_recog"/>
+
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/text"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/take_pic"
+            android:id="@+id/image_take_pic"/>
+
+
+        <Button
+            android:id="@+id/take_pic_btn"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/take_pic_camara"
+            android:background="@drawable/rounded_main_color_button"
+            android:paddingTop="-10dp"
+            android:paddingBottom="-10dp"
+            android:layout_below="@+id/image_take_pic"
+            android:textColor="@android:color/white"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"/>
+
+        <Button
+            android:id="@+id/gallary_pic_btn"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/choose_from_gallary"
+            android:background="@drawable/rounded_main_color_button"
+            android:paddingTop="-10dp"
+            android:paddingBottom="-10dp"
+            android:layout_below="@+id/take_pic_btn"
+            android:textColor="@android:color/white"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"/>
+
+
+
+
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolBar1"
+            android:layout_alignParentBottom="true"
+            android:background="#1000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/back"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    ></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    >
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/next"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

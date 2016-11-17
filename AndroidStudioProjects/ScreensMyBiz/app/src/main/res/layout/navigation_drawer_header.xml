@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="170dp"
+    android:background="@drawable/navigation_header_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="account type"
+        android:id="@+id/account_type"
+        android:textColor="@color/white"
+        android:gravity="end"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="29dp" />
+
+    <TextView
+        android:layout_below="@+id/profile_image"
+        android:layout_marginRight="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user name"
+        android:id="@+id/user_name"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user_email@this_app"
+        android:id="@+id/user_email"
+        android:textColor="@color/white"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="25dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/profile_image"
+        />
+
+</RelativeLayout>

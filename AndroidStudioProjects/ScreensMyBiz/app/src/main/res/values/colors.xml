@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#455a64</color>
+    <color name="colorAccent">#607d8b</color>
+    <color name="main_color">#607d8b</color>
+    <color name="white">#fff</color>
+    <color name="red_create_account">#ff5252</color>
+    <color name="yellow_star">#e7ae01</color>
+</resources>

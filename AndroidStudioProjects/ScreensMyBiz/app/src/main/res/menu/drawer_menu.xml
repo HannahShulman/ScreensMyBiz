@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_item_timeline"
+            android:icon="@drawable/profile"
+            android:title="@string/drawer_invite"/>
+
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+
+        <item
+            android:checked="true"
+            android:id="@+id/drawer_item_ad"
+            android:icon="@drawable/gift"
+            android:title="@string/drawe_ad"/>
+
+        <item
+
+            android:id="@+id/drawer_groups"
+            android:icon="@drawable/suggest"
+            android:title="@string/drawer_groups" >
+        </item>
+
+        <item
+            android:id="@+id/drawer_my_profile"
+            android:icon="@drawable/my_profile"
+            android:title="@string/my_profile"/>
+
+        <item
+            android:id="@+id/drawer_show_location"
+            android:icon="@drawable/suggest"
+            android:title="@string/drawer_show_location" >
+        </item>
+
+
+        <item
+            android:id="@+id/drawer_item_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/drawer_settings" >
+        </item>
+
+        <item
+            android:id="@+id/drawer_about"
+            android:icon="@drawable/profile"
+            android:title="@string/drawer_about"/>
+
+        <item
+            android:id="@+id/drawer_item_reports"
+            android:icon="@drawable/suggest"
+            android:title="@string/drawer_earned_deals"/>
+
+
+    </group>
+
+
+
+</menu>

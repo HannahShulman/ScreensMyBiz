@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">מייביז</string>
+    <string name="skip">דלג</string>
+    <string name="create_account">פתיחת חשבון</string>
+    <string name="service_user">אני ספק שירות</string>
+    <string name="private_user">במידה והנך רוצה להשתמש באפליקציה כצרכן הרשם כמשתמש פרטי</string>
+    <string name="service_description">במידה והנך עסק / סוכן מכירות, או איש מקצוע הירשם כספק שירות</string>
+    <string name="create__mybiz_account">צור חשבון מייביז</string>
+    <string name="name">שם</string>
+    <string name="address">כתובת</string>
+    <string name="owner">אני בעל עסק או סוכן מכירות</string>
+    <string name="service">אני נותן שירות</string>
+    <string name="log_in"><u>הכנס</u></string>
+    <string name="have_account">יש לך חשבון?</string>
+    <string name="back">קודם</string>
+    <string name="next">הבא</string>
+    <string name="email">מייל</string>
+    <string name="password">סיסמא</string>
+    <string name="create"><u>  צור חשבון</u></string>
+    <string name="dont_have_account">עדיין אין לך חשבון?</string>
+    <string name="town">עיר</string>
+    <string name="phone_number">מספר טלפון</string>
+    <string name="open_hours">שעות פתיחה</string>
+    <string name="short_description">תאור קצר</string>
+    <string name="limit_to_30_char">עד 30 תווים</string>
+    <string name="additional_properties">מאפיינים נוספים</string>
+    <string name="add_image">הוסף תמונה</string>
+    <string name="add_image_for_recog">הוסף תמונה שלקוחות יוכלו לזהות אותך</string>
+    <string name="take_pic_camara">צלם תמונה</string>
+    <string name="choose_from_gallary">בחר מהגלריה</string>
+    <string name="slogen">שמירת קשר ביעילות</string>
+    <string name="google_sign_in">הרשם עם גוגל</string>
+    <string name="fb_sign_in">הרשם עם פייסבוק</string>
+    <string name="drawer_invite">הזמן חבר / עסק</string>
+    <string name="drawe_ad">פרסם מבצע / קופון</string>
+    <string name="drawer_groups">קבוצות</string>
+    <string name="my_profile">הפרופיל שלי</string>
+    <string name="drawer_show_location">הראה את מיקומך</string>
+    <string name="drawer_about">אודות מייביז</string>
+    <string name="drawer_earned_deals">מכרזים שזכיתי</string>
+    <string name="tenders">מכרזים</string>
+    <string name="service_tab">שירותים</string>
+    <string name="chat">צ\'אטים</string>
+</resources>

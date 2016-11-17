@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+   <TextView
+       android:layout_marginTop="80dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="מייביז"
+       android:textColor="@color/main_color"
+       android:textStyle="normal"
+       android:textSize="33.21pt"
+       android:layout_centerHorizontal="true"
+       android:id="@+id/title"
+
+       />
+    <TextView
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slogen"
+        android:textColor="#57000000"
+        android:textSize="9pt"
+        android:id="@+id/slogen"/>
+
+    <ImageButton
+        android:id="@+id/google_sign_in_btn"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/slogen"
+        android:layout_centerHorizontal="true"
+        android:layout_width="274dp"
+        android:textSize="7.5pt"
+        android:layout_height="47dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/abc"
+        />
+
+    <ImageButton
+
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/google_sign_in_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="274dp"
+        android:layout_height="47dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/fb_btn2"
+        android:textAllCaps="false"
+        android:textSize="7.5pt"
+        android:text="@string/fb_sign_in"
+        android:id="@+id/fb_sign_in_btn"/>
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fb_sign_in_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hands"/>ag
+</RelativeLayout>

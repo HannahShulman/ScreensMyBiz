@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/drawer_item_timeline"
+            android:icon="@drawable/profile"
+            android:title="@string/drawer_timeline"/>
+        <item
+            android:id="@+id/drawer_item_reports"
+            android:icon="@drawable/profile"
+            android:title="@string/owner"/>
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/drawer_item_settings"
+            android:icon="@drawable/suggest"
+            android:title="@string/drawer_settings" >
+        </item>
+    </group>
+</menu>
