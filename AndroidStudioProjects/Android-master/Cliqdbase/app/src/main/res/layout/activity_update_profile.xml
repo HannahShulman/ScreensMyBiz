@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.cliqdbase.app._activities.UpdateProfileActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edit_profile_first_name"
+        android:layout_alignParentTop="true"
+        android:hint="@string/first_name_hint"
+        style="@style/Name_Edit_Text_Style"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edit_profile_last_name"
+        android:layout_below="@+id/edit_profile_first_name"
+        android:hint="@string/last_name_hint"
+        style="@style/Name_Edit_Text_Style"
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edit_profile_date_of_birth"
+        android:layout_below="@+id/edit_profile_last_name"
+        android:hint="@string/birthday_hint"
+        style="@style/Birthday_Edit_Text_Style"
+        />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_profile_location"
+        android:layout_below="@+id/edit_profile_date_of_birth"
+        android:hint="@string/location_hint"
+        android:completionThreshold="1"
+        style="@style/Birthday_Edit_Text_Style"
+        /> <!-- TODO change the style -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:id="@+id/edit_profile_update_profile_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/edit_profile_location"
+        android:layout_alignEnd="@+id/edit_profile_location" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:id="@+id/change_password_button"
+        android:layout_below="@+id/edit_profile_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="message_received">#4DB8FF</color>
+    <color name="message_sent">#FF974D</color>
+
+    <color name="list_default_background">#FFFFFF</color>
+    <color name="list_selected_background">#6699FF</color>
+
+    <color name="black">#000000</color>
+
+    <color name="dropdown_background">#fffafafa</color>
+
+</resources>

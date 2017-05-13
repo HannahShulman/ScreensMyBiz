@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_save_filter_dialog_text"
+        android:gravity="center"
+        style="@android:style/TextAppearance.Medium"
+        />
+
+    <EditText android:id="@+id/filter_cliq_save_filter_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:hint="@string/filter_save_filter_et_hint"
+        />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">מייביז</string>
+    <string name="private_user" translatable="true">If you would like to register as private user</string>
+    <string name="skip" translatable="true">skip</string>
+    <string name="create_account" translatable="true">create account</string>
+    <string name="service_user" translatable="true">register service</string>
+    <string name="service_description" translatable="true">if you are a service/ agency or profession register as ...</string>
+    <string name="create__mybiz_account" translatable="true">create mybiz account</string>
+    <string name="name" translatable="true">name</string>
+    <string name="address" translatable="true">address</string>
+    <string name="owner" translatable="true">I own a business or am an agency</string>
+    <string name="service" translatable="true">I give a service</string>
+    <string name="log_in" translatable="true"><u>Log in</u></string>
+    <string name="have_account" translatable="true">Have an account?</string>
+    <string name="next" translatable="true">next</string>
+    <string name="back" translatable="true">back</string>
+    <string name="email" translatable="true">e-mail</string>
+    <string name="password" translatable="true">password</string>
+    <string name="create" translatable="true">create</string>
+    <string name="dont_have_account" translatable="true">Dont have an account?</string>
+    <string name="town" translatable="true">town</string>
+    <string name="phone_number" translatable="true">phone</string>
+    <string name="open_hours" translatable="true">openning hours</string>
+    <string name="short_description" translatable="true">short description</string>
+    <string name="limit_to_30_char" translatable="true">upto 30 characters</string>
+    <string name="additional_properties" translatable="true">additional properties</string>
+    <string name="add_image" translatable="true">add image</string>
+    <string name="add_image_for_recog">add image so that customers can identify you</string>
+    <string name="take_pic_camara" translatable="true">take picture</string>
+    <string name="choose_from_gallary" translatable="true">choose from gallary</string>
+    <string name="slogen" translatable="true">staying in touch effectively</string>
+    <string name="google_sign_in" translatable="true">sign in using google</string>
+    <string name="fb_sign_in" translatable="true">sign in using Facebook</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="chats">Chats</string>
+    <string name="title_activity_navigation">Navigation</string>
+
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="drawer_settings" translatable="true">settings</string>
+    <string name="drawer_about" translatable="true">about myBiz</string>
+    <string name="drawer_timeline">time</string>
+    <string name="drawer_invite" translatable="true">invite friend</string>
+    <string name="drawe_ad" translatable="true">advertise sale</string>
+    <string name="drawer_groups" translatable="true">groups</string>
+    <string name="my_profile" translatable="true">my profile</string>
+    <string name="drawer_show_location">show my location</string>
+    <string name="drawer_earned_deals" translatable="true">earned deals</string>
+    <string name="plumber">plumber</string>
+    <string name="babysitter">babysitter</string>
+    <string name="chat" translatable="true">Chats</string>
+    <string name="tenders" translatable="true">tenders</string>
+    <string name="service_tab" translatable="true">service</string>
+    <string name="favourite" translatable="true">favourite</string>
+    <string name="professionals" translatable="true">Professionals</string>
+    <string name="near_me" translatable="true">near by</string>
+    <string name="business" translatable="true">business</string>
+    <string name="type_msg" translatable="true">type your message</string>
+    <string name="title_activity_bc_cb">bc_cb</string>
+    <string name="info" translatable="true">info</string>
+    <string name="account_type">חשבון עסקי</string>
+    <string name="comment">הזמנתי את דרכי המלך אחרי הביקורות החיוביות שראיתי במייביז  והופתעתי לטובה מאיכות השירות ומהדיוק בזמנים . הנהג היה אדיב מאוד והמחיר היה הכי זול שאי פעם שמעתי בחברת הסעות ממליץ בחום החברה הכי אמינה בשוק מניסיון !!</string>
+    <string name="tchum_sheli">מבצעים מהתחום שלי</string>
+    <string name="my_business_account">פתח חשבון עסקי</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_activity_drawer_string_array">
+        <item>Chats</item>
+        <item>Profile</item>
+        <item>Location Test</item>
+        <item>Venue-Chat (Express yourself)</item>
+        <item>Search Filter</item>
+    </string-array>
+</resources>

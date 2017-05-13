@@ -1,0 +1,215 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.cliqdbase.app._activities.SignUpActivity"
+    android:background="@drawable/background_2"
+    android:id="@+id/RelLay1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:contentDescription="@string/form_background"
+            android:layout_width="wrap_content"
+            android:layout_height="535dp"
+            android:id="@+id/SignUpBackground"
+            android:background="@drawable/form_background"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+        <ImageView
+            android:contentDescription="@string/form_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Sign_Up_Title"
+            android:background="@drawable/signup_title"
+            android:layout_alignTop="@id/SignUpBackground"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+
+        <ImageView
+            android:contentDescription="@string/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Separator1"
+            android:background="@drawable/separator"
+            android:layout_below="@+id/Sign_Up_Title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/Sign_Up_Email_Address"
+            style="@style/Email_Edit_Text_Style"
+            android:layout_below="@+id/Separator1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/Sign_Up_Password"
+            android:layout_below="@+id/Sign_Up_Email_Address"
+            android:layout_alignLeft="@+id/Sign_Up_Email_Address"
+            android:layout_alignStart="@+id/Sign_Up_Email_Address"
+            style="@style/Password_Edit_Text_Style" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/First_Name"
+            android:layout_below="@+id/Sign_Up_Password"
+            android:layout_alignLeft="@+id/Sign_Up_Password"
+            android:layout_alignStart="@+id/Sign_Up_Password"
+            android:hint="@string/first_name_hint"
+            style="@style/Name_Edit_Text_Style"
+            android:layout_alignRight="@+id/Sign_Up_Password"
+            android:layout_alignEnd="@+id/Sign_Up_Password"
+            android:singleLine="true"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Last_Name"
+            android:layout_below="@+id/First_Name"
+            android:layout_alignLeft="@+id/First_Name"
+            android:layout_alignStart="@+id/First_Name"
+            android:layout_alignRight="@+id/First_Name"
+            android:layout_alignEnd="@+id/First_Name"
+            android:hint="@string/last_name_hint"
+            style="@style/Name_Edit_Text_Style"
+            android:singleLine="true"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/DateOfBirth"
+            android:layout_below="@+id/Last_Name"
+            android:layout_alignLeft="@+id/Last_Name"
+            android:layout_alignStart="@+id/Last_Name"
+            android:layout_alignRight="@+id/Last_Name"
+            android:layout_alignEnd="@+id/Last_Name"
+            android:hint="@string/birthday_hint"
+            style="@style/Birthday_Edit_Text_Style" />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/sign_up_location"
+            android:layout_below="@+id/DateOfBirth"
+            android:layout_alignLeft="@+id/DateOfBirth"
+            android:layout_alignStart="@+id/DateOfBirth"
+            android:layout_alignRight="@+id/DateOfBirth"
+            android:layout_alignEnd="@+id/DateOfBirth"
+            android:hint="@string/location_hint"
+            android:completionThreshold="1"
+            style="@style/Birthday_Edit_Text_Style"
+            /> <!-- TODO change the style -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="@string/gender"
+            android:id="@+id/GenderText"
+            android:layout_below="@+id/sign_up_location"
+            android:layout_alignLeft="@+id/DateOfBirth"
+            android:layout_alignStart="@+id/DateOfBirth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/sign_up_location"
+            android:layout_toRightOf="@+id/GenderText"
+            android:layout_toEndOf="@+id/GenderText"
+            android:id="@+id/genderRadioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_male"
+                android:id="@+id/male_radioButton"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_female"
+                android:id="@+id/female_radioButton"
+                android:checked="false" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:contentDescription="@string/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Separator2"
+            android:background="@drawable/separator"
+            android:layout_below="@+id/genderRadioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />   <!-- android:layout_above="@+id/Sign_Up_Button" -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Sign_Up_Button"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/sign_up_button"
+            android:layout_alignBottom="@+id/SignUpBackground"
+            android:layout_alignRight="@+id/SignUpBackground"
+            android:layout_alignEnd="@+id/SignUpBackground"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <ImageButton
+            android:contentDescription="@string/login_now"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/login_now_button"
+            android:layout_alignRight="@+id/Sign_Up_Button"
+            android:layout_alignEnd="@+id/Sign_Up_Button"
+            android:layout_below="@+id/SignUpBackground"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/log_in_now_button" />
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebook_sign_up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/login_now_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

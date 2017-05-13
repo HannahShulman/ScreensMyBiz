@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- ActionBar Style. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+    </style>
+
+    <style name="AppTheme.Base" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+
+    <style name="LoginTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/CliqdbaseActionBar</item>
+    </style>
+
+    <style name="CliqdbaseActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/logo_background</item>        <!-- Displaying our action bar background image -->
+        <item name="android:displayOptions">showHome</item>             <!-- Hiding the text -->
+        <item name="android:icon">@drawable/logo</item>                 <!-- Changing the icon to our logo -->
+
+    </style>
+
+    <style name="LoginButton" parent="@android:style/Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/sign_in_button</item>
+    </style>
+
+    <style name="Email_Edit_Text_Style" parent="@android:style/Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/edit_text_box</item>
+        <item name="android:layout_marginLeft">15dp</item>          <!-- Placing the editText in the middle -->
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:padding">10dp</item>                    <!-- Shifting the icon to the start of the editText -->
+        <item name="android:drawableLeft">@drawable/mail_icon</item>
+        <item name="android:hint">@string/email_hint</item>
+    </style>
+
+    <style name="Password_Edit_Text_Style" parent="@android:style/Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/edit_text_box</item>
+        <item name="android:layout_marginRight">15dp</item>         <!-- Here we don't need the marginLeft because this editText is below the email editText -->
+        <item name="android:padding">10dp</item>                    <!-- Shifting the icon to the start of the editText -->
+        <item name="android:drawablePadding">7dp</item>             <!-- Aligning the placeholder of this edit text with the place holder of the above editText -->
+        <item name="android:drawableLeft">@drawable/password_icon</item>
+        <item name="android:hint">@string/password_hint</item>
+    </style>
+
+    <style name="Name_Edit_Text_Style" parent="@android:style/Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/edit_text_box</item>
+        <item name="android:padding">10dp</item>                    <!-- Shifting the icon to the start of the editText -->
+        <item name="android:drawablePadding">7dp</item>             <!-- Aligning the placeholder of this edit text with the place holder of the above editText -->
+        <item name="android:drawableLeft">@drawable/name_icon</item>
+    </style>
+
+    <style name="Birthday_Edit_Text_Style" parent="@android:style/Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/edit_text_box</item>
+        <item name="android:padding">10dp</item>                    <!-- Shifting the icon to the start of the editText -->
+        <item name="android:drawablePadding">7dp</item>             <!-- Aligning the placeholder of this edit text with the place holder of the above editText -->
+        <item name="android:drawableLeft">@drawable/calendar_icon</item>
+    </style>
+
+
+
+</resources>

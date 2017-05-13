@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">Cliqdbase</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Activity titles -->
+    <string name="title_activity_login">Login to Cliqdbase!</string>
+    <string name="title_activity_sign_up">Sign-Up to Cliqdbase!</string>
+
+    <!-- facebook strings -->
+    <string name="facebook_app_id">1482365885338612</string>
+
+    <!-- Content Description of ImageViews and ImageButtons -->
+    <string name="form_background">The Sign-up form background</string>
+    <string name="form_title">The title of the current displayed form</string>
+    <string name="separator">Separating the different parts of the form</string>
+    <string name="forgot_details">Helps the user retrieve his password back</string>
+    <string name="sign_up_now">Navigates the user to the sign-up activity</string>
+    <string name="login_now">Navigates the user to the login activity</string>
+    <string name="profile_image_change">Your profile image</string>
+    <string name="profile_image_edit_image">Change your profile image</string>
+    <string name="user_profile_image">This user\'s profile image</string>
+    <string name="welcome_activity_logo">The image logo in the welcome (first) activity</string>
+    <string name="item_color_image_view_content_description">Color</string>
+
+
+    <!-- Hints for edit texts -->
+    <string name="password_hint">Password</string>
+    <string name="repeat_password_hint">Repeat Password</string>
+    <string name="old_password_hint">Old password</string>
+    <string name="new_password_hint">New password</string>
+    <string name="repeat_new_password_hint">Repeat New password</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="birthday_hint">Date Of Birth</string>
+    <string name="email_hint">Email Address</string>
+    <string name="location_hint">City</string>
+    <string name="chat_write_new_message_hint">Write a message</string>
+    <string name="blank_any">Blank (Any)</string>
+
+    <!-- TextViews strings -->
+    <string name="gender">Gender:</string>
+    <string name="pick_image">Choose a profile picture:</string>
+    <string name="missing_fields_date_of_birth">Your date of birth:</string>
+    <string name="forgot_password_dialog_text_view">To reset your password, enter your email address.</string>
+    <string name="reset_password_text_view">To complete the reset password process, Enter the new password:</string>
+
+    <!-- Radio Buttons strings -->
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_other">Other</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <!-- Buttons strings -->
+    <string name="upload_image_button">Upload photo</string>
+
+
+    <!-- Menu items strings -->
+    <string name="edit_profile_menu_item">Edit your profile</string>
+    <string name="change_profile_image_menu_item">Change your profile picture</string>
+
+
+    <string name="title_activity_change_profile_pic">ChangeProfilePic</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_update_profile">UpdateProfileActivity</string>
+
+
+    <!-- Alert Dialogs strings -->
+        <string name="cant_load_profile_info">We were unable to load the profile information.\n Please try again later.</string>
+        <string name="unknown_server_error_title">Unknown server error</string>
+        <string name="unknown_server_error_text">There was an error in the server. Please try again in a short while. If this issue continues, please contact us.</string>
+        <string name="missing_fields_title">Missing Fields</string>
+        <string name="missing_fields_text">Please check all the required fields.</string>
+        <string name="user_exists_title">User exists</string>
+        <string name="user_exists_text">There is already a user with that email address. Try logging in.</string>
+        <string name="user_exists_alert_button">Log in</string>
+        <string name="date_picker_birthday_title">Your date of birth</string>
+        <string name="please_wait">Please wait&#8230;</string>
+        <string name="login_error_title">Problem logging in</string>
+        <string name="login_error_text">Please make sure that you used the correct email/password, and that you are trying to login in the same way you signed up.</string>
+        <string name="close_alert">Close</string>
+        <string name="delete_chats_title">Delete Conversations</string>
+        <string name="delete_chats_content">Are you sure you want to delete these conversations?</string>
+        <string name="delete_messages_title">Delete Messages</string>
+        <string name="delete_messages_content">Are you sure you want to delete these messages?</string>
+        <string name="reset_password_title">Reset Password</string>
+        <string name="reset_password_success">An email was sent to the email address you supplied.\nFollow the instruction on the mail to complete the process.</string>
+        <string name="reset_password_failure_404">The email address you supplied doesn\'t exists in our database.\nPlease make sure you entered the correct address.</string>
+        <string name="password_changed_successfully">Your password had been changed successfully</string>
+        <string name="confirmation_code_error">Your confirmation code doesn\'t exists, or already had been used.</string>
+        <string name="old_password_incorrect_title">Password Incorrect</string>
+        <string name="old_password_incorrect_message">The password you entered is incorrect. Please try again.</string>
+        <string name="guest_user_exists_on_device">There is already a guest user on this device. Would you like to use it, or create a fresh one?</string>
+        <string name="guest_user_exists_log_into_guest">Use existing</string>
+        <string name="guest_user_exists_create_new_guest">Create new</string>
+        <string name="login_banned_title">Banned</string>
+        <string name="login_banned_message">Due to large number of wrong login attempts, You have been banned for one hour.</string>
+        <string name="guest_privacy_info_title">Guest privacy information</string>
+        <string name="guest_privacy_info_message">Your data will be saved on our server and will be used in the future once you will sign up.</string>
+        <string name="not_accessible_for_guest_title">Please Sign Up.</string>
+        <string name="not_accessible_for_guest_message">The content you are trying to view is not accessible for a guest user. Please sign up to continue.</string>
+
+    <!-- Toasts strings -->
+    <string name="no_internet_connection">You are not connected to the internet.\nPlease connect and try again.</string>
+
+    <string name="facebook_no_email_received">No email received from facebook.</string>
+    <string name="facebook_no_data">Couldn\'t receive data from facebook.</string>
+    <string name="facebook_sign_up_failed">Sign up failed</string>      <!-- Used to suffix the two string above -->
+    <string name="facebook_login_failed">Login failed</string>      <!-- Used to suffix the two facebook string above -->
+
+    <string name="update_profile_error">Couldn\'t update your profile. Please try again later.</string>
+    <string name="image_upload_successful">Image Uploaded successfully</string>
+    <string name="image_upload_not_logged_in">You must be logged in inorder to upload images.</string>
+    <string name="image_upload_file_too_large">Image file is too large</string>
+    <string name="image_upload_invalid_file">Invalid image file</string>
+    <string name="image_upload_no_image_chosen">No image chosen</string>
+    <string name="image_upload_fail">Image upload failed</string>
+    <string name="image_removal_success">Image removed successfully</string>
+    <string name="image_removal_failure">An error occurred: Image wasn\'t removed.</string>
+
+    <string name="guest_info_removed">Guest data removed.</string>
+    <string name="logged_in_as_guest">Logged in as guest.</string>
+    <string name="android_id_not_available">Error: Can\'t create guest user on this device.</string>
+
+    <string name="cant_capture_image_from_camera">Can\'t find an application to capture the image.</string>
+    <string name="cant_download_guest_data">Could not download your data.</string>
+
+    <!-- Regular texts -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="success">Success!</string>
+    <string name="error">Error</string>
+    <string name="continue_text">Continue</string>
+    <string name="ok">OK</string>
+    <string name="server_error_500">Internal server error. Please try again later.</string>
+    <string name="search">Search!</string>
+    <string name="metric">Metric</string>
+    <string name="imperial">Imperial</string>
+    <string name="clear">Clear</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="skip">Skip</string>
+
+
+    <string name="change_picture_title_after_sign_up">Would you like to set your profile picture now?</string>
+    <string name="change_picture_title_regular">Change your profile picture.</string>
+
+    <!-- Menu strings -->
+    <string name="menu_logout">Logout</string>
+    <string name="menu_delete_conversation">Delete this conversation</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_copy">Copy</string>
+    
+
+
+    <!-- Errors strings for wrong input -->
+    <string name="date_error">Please enter a valid date</string>
+    <string name="name_error">Name cannot be empty</string>
+    <string name="city_error">Please select a city from the city list</string>
+    <string name="email_address_error">Please enter a valid email address</string>
+    <string name="password_error">Password length must be at least </string>
+    <string name="gender_error">Please select a gender</string>
+    <string name="title_activity_chat_main">ChatMainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_chat_conversation">ChatConversationActivity</string>
+    <string name="title_activity_gmaps_search_test">GmapsSearchTestActivity</string>
+    <string name="title_activity_gmaps_search">Map</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_confirm_email">ConfirmEmailActivity</string>
+    <string name="title_activity_venue_chat">VenueChatActivity</string>
+    <string name="title_activity_list_view_test">ListViewTestActivity</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="title_activity_reset_pass">ResetPassActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_venue_chat_main">VenueChatMain</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_search_filter">SearchFilterActivity</string>
+
+
+
+    <!-- Search filter activity -->
+    <string name="filter_search_cliq_date">Cliq date:</string>
+    <string name="filter_search_cliq_time">Cliq Time:</string>
+    <string name="filter_search_cliq_gender">My Cliq is:</string>
+    <string name="filter_search_advanced_search">Advanced Search</string>
+    <string name="filter_search_cliq_clothes">My Cliq wore:</string>
+    <string name="filter_search_cliq_clothes_color">Cliq\'s clothes color:</string>
+    <string name="filter_search_cliq_hair_color">My Cliq hair color:</string>
+    <string name="filter_search_cliq_hair_style">My Cliq hair style:</string>
+    <string name="filter_search_cliq_eye_color">My Cliq eye color:</string>
+    <string name="filter_search_cliq_skin_color">My Cliq skin color:</string>
+    <string name="filter_search_cliq_body_type">My Cliq body type:</string>
+    <string name="filter_search_cliq_height">My Cliq height:</string>
+    <string name="filter_search_my_clothes">I wore:</string>
+    <string name="filter_search_my_clothes_color">My clothes\' color:</string>
+    <string name="filter_search_my_hair_color">My hair color:</string>
+    <string name="filter_search_my_hair_style">My hair style:</string>
+    <string name="filter_search_my_eye_color">My eye color:</string>
+    <string name="filter_search_my_skin_color">My skin color:</string>
+    <string name="filter_search_my_body_type">My body type:</string>
+    <string name="filter_search_my_height">My height:</string>
+    <string name="filter_search_save_cliq_filter">Save This Filter</string>
+    <string name="filter_search_update_cliq_filter">Update This Filter</string>
+    <string name="filter_search_load_cliq_filter">Load Saved Filter</string>
+    <string name="filter_save_filter_et_hint">Enter a name for the filter</string>
+    <string name="filter_save_filter_dialog_text">You can save the data you entered about your cliq, and load it in case you would like to search someone similar.</string>
+    <string name="filter_save_filter_name_exists">You already have a filter with the given name. Please choose another name.</string>
+    <string name="filter_load_filter_no_filter_saved">You hadn\'t saved any filter.</string>
+    <string name="title_activity_cliq_search_result">CliqSearchResultActivity</string>
+
+
+
+</resources>

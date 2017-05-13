@@ -1,0 +1,506 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:yuval="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:padding="@dimen/filter_activity_margin"
+    android:orientation="vertical"
+    tools:context="com.cliqdbase.app._fragments.SearchFilterFragment">
+
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            /> <!-- In order for the date et not to receive focus on activity start -->
+
+        <LinearLayout android:id="@+id/filter_cliq_date_time_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_search_cliq_date"
+                    style="@android:style/TextAppearance.Medium"
+                    />
+
+                <EditText android:id="@+id/filter_cliq_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_search_cliq_time"
+                    style="@android:style/TextAppearance.Medium"
+                    />
+
+                <EditText android:id="@+id/filter_cliq_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxLines="1"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_search_cliq_gender"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_marginTop="@dimen/filter_activity_margin"
+            />
+
+
+        <RadioGroup android:id="@+id/filter_cliq_gender_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:checkedButton="@+id/filter_cliq_gender_male"
+            >
+
+            <RadioButton android:id="@+id/filter_cliq_gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_male"
+                style="@android:style/TextAppearance.Medium"
+                />
+
+            <RadioButton android:id="@+id/filter_cliq_gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_female"
+                style="@android:style/TextAppearance.Medium"
+                />
+
+            <RadioButton android:id="@+id/filter_cliq_gender_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_other"
+                style="@android:style/TextAppearance.Medium"
+                />
+
+        </RadioGroup>
+
+        <com.cliqdbase.app.widgets.ExpandablePanel android:id="@+id/filter_cliq_all_edit_texts_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            yuval:handle="@+id/filter_cliq_advanced_search_button"
+            yuval:content="@+id/filter_cliq_parameters_linear_layout"
+            yuval:collapsedHeight="700dp"
+            android:orientation="vertical"
+            >
+
+            <Button android:id="@+id/filter_cliq_advanced_search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_search_advanced_search"
+                />
+
+
+            <LinearLayout android:id="@+id/filter_cliq_parameters_linear_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button android:id="@+id/filter_cliq_load_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_search_load_cliq_filter"
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+
+                    <LinearLayout android:id="@+id/filter_cliq_my_cliq_edit_texts_container"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_cliq_clothes"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+
+                        <EditText android:id="@+id/filter_cliq_clothes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_cliq_clothes_color"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_cliq_clothes_color"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyColorEditText android:id="@+id/filter_cliq_clothes_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_cliq_hair_color"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_cliq_hair_color"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyColorEditText android:id="@+id/filter_cliq_hair_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_cliq_hair_style"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_cliq_hair_style"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyAutoCompleteTextView android:id="@+id/filter_cliq_hair_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_cliq_eye_color"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_cliq_eye_color"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyColorEditText android:id="@+id/filter_cliq_eye_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_cliq_skin_color"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_cliq_skin_color"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyColorEditText android:id="@+id/filter_cliq_skin_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_cliq_body_type"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_cliq_body_type"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyAutoCompleteTextView  android:id="@+id/filter_cliq_body_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_cliq_height"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_cliq_height"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <EditText android:id="@+id/filter_cliq_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="number"
+                            android:nextFocusForward="@+id/filter_my_clothes"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <CheckBox android:id="@+id/filter_cliq_save_filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_save_cliq_filter"
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout android:id="@+id/filter_cliq_my_edit_texts_container"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_my_clothes"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+
+                        <EditText android:id="@+id/filter_my_clothes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_my_hair_color"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_my_clothes_color"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyColorEditText android:id="@+id/filter_my_clothes_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_my_hair_color"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_my_hair_color"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyColorEditText android:id="@+id/filter_my_hair_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_my_hair_style"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_my_hair_style"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyAutoCompleteTextView android:id="@+id/filter_my_hair_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_my_eye_color"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_my_eye_color"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyColorEditText android:id="@+id/filter_my_eye_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_my_skin_color"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_my_skin_color"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyColorEditText android:id="@+id/filter_my_skin_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_my_body_type"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_my_body_type"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <com.cliqdbase.app.widgets.MyAutoCompleteTextView  android:id="@+id/filter_my_body_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/filter_my_height"
+                            android:imeOptions="actionNext"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filter_search_my_height"
+                            style="@android:style/TextAppearance.Medium"
+                            android:paddingTop="@dimen/filter_activity_margin"
+                            />
+                        <EditText android:id="@+id/filter_my_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:hint="@string/blank_any"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:inputType="number"
+                            android:imeOptions="actionDone"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </com.cliqdbase.app.widgets.ExpandablePanel>
+
+        <Button android:id="@+id/filter_cliq_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/filter_activity_margin"
+            />
+
+    </LinearLayout>
+</ScrollView>

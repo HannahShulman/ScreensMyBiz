@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/google_maps_query_edit_text"
+
+        android:inputType="text"
+        android:hint="Search g-maps (empty=current location)"
+        android:maxLines="1"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/run_query"
+        android:layout_toStartOf="@+id/run_query" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list"
+        android:layout_below="@+id/google_maps_query_edit_text"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/run_query"
+        android:layout_above="@android:id/list"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/run_query"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="No results.\n\n
+        To search google maps, Enter a query in the box above and press the Search button.\n\n
+        If you will leave the box empty and press the Search button, the app will search places near your location"
+        />
+</RelativeLayout>

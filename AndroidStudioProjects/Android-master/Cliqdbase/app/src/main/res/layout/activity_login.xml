@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".LoginActivity"
+    android:id="@+id/Login_layout1"
+    android:background="@drawable/background_2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:contentDescription="@string/form_background"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/Login_Form_Background"
+            android:background="@drawable/form_background"
+            android:layout_gravity="center"
+            android:layout_marginTop="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:contentDescription="@string/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Separator1"
+            android:background="@drawable/separator"
+            android:layout_below="@+id/Login_Form_Title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:contentDescription="@string/form_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Login_Form_Title"
+            android:background="@drawable/login_title"
+            android:layout_alignTop="@+id/Login_Form_Background"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/Login_Email_Address"
+            android:layout_below="@+id/Separator1"
+            android:layout_centerHorizontal="true"
+            style="@style/Email_Edit_Text_Style" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/Login_Password"
+            android:layout_below="@+id/Login_Email_Address"
+            android:inputType="textPassword"
+            android:layout_alignLeft="@+id/Login_Email_Address"
+            android:layout_alignStart="@+id/Login_Email_Address"
+            android:imeOptions="actionDone"
+            style="@style/Password_Edit_Text_Style" />
+
+        <ImageView
+            android:contentDescription="@string/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Separator2"
+            android:background="@drawable/separator"
+            android:layout_below="@+id/Login_Password"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:contentDescription="@string/forgot_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Forgot_Details"
+            android:background="@drawable/forgot_details"
+            android:layout_below="@+id/Separator2"
+            android:layout_alignRight="@+id/Sign_In_Button"
+            android:layout_alignEnd="@+id/Sign_In_Button" />
+
+
+        <!-- TODO change place and size of facebook button
+         http://stackoverflow.com/questions/16314651/customize-android-facebook-login-button
+         -->
+        <!--
+        <com.facebook.widget.LoginButton
+            android:id="@+id/facebook_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/Sign_Up_Now_Button"
+            />
+        -->
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebook_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/Sign_Up_Now_Button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Sign_In_Button"
+            style="@style/LoginButton"
+            android:layout_below="@+id/Forgot_Details"
+            android:layout_alignRight="@+id/Login_Password"
+            android:layout_alignEnd="@+id/Login_Password"
+            android:layout_marginTop="3dp" />
+
+        <ImageButton
+            android:contentDescription="@string/sign_up_now"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/Sign_Up_Now_Button"
+            android:layout_below="@+id/Login_Form_Background"
+            android:layout_alignLeft="@+id/Login_Password"
+            android:layout_alignStart="@+id/Login_Password"
+            android:layout_alignRight="@+id/Login_Password"
+            android:layout_alignEnd="@+id/Login_Password"
+            android:background="@drawable/sign_up_now_button" />
+
+    </RelativeLayout>
+</ScrollView>
